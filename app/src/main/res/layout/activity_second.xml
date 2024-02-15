@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app"
+    android:foregroundTint="#0C0707"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
+
+        android:text="Enter your Details"
+        android:textColor="#050404"
+        android:textColorHighlight="#211717"
+        android:textColorHint="#151010"
+        android:textColorLink="#120C0C"
+        android:textSize="20dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="252dp"
+        android:layout_height="42dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="129dp"
+        android:hint="Enter your Name"
+        android:inputType="text"
+        android:textColorHighlight="#000000"
+        android:textColorHint="@color/black"
+        android:textColorLink="#000000" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="254dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/editTextText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:hint="Enter your Age"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="@color/black"
+        android:textColorLink="#151111" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="248dp"
+        android:layout_height="42dp"
+        android:layout_below="@id/editTextText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:hint="Enter your Password"
+        android:inputType="textPassword"
+        android:textColor="#120E0E"
+        android:textColorHighlight="#120D0D"
+        android:textColorHint="@color/black"
+        android:textColorLink="#211B1B" />
+
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="250dp"
+        android:layout_height="46dp"
+        android:layout_below="@id/editTextTextPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:hint="Enter your Strength"
+        android:inputType="text"
+        android:textColorHint="@color/black"/>
+
+    <EditText
+        android:id="@+id/editTextText4"
+        android:layout_width="246dp"
+        android:layout_height="44dp"
+        android:layout_below="@id/editTextText3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:hint="Enter your Weakness"
+        android:inputType="text"
+        android:textColorHint="@color/black"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/imageselect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextText4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="Upload image"
+
+        android:textColor="#FAFDFD"
+        android:textColorHighlight="#4FAC74"
+        android:textColorHint="#DF2D2D"
+        android:textColorLink="#DF5353" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageselect"
+        android:layout_centerHorizontal="false"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:text="Save Details"
+        android:textColor="#F8F8F8"
+        android:textColorHighlight="#EDA6A6"
+        android:textColorHint="#0B0808" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/showbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageselect"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="20dp"
+        android:text="Show Details"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#1E88E5">
+
+    </com.google.android.material.button.MaterialButton>
+
+
+    <ProgressBar
+        android:id="@+id/pbar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="25dp"
+        android:progressTint="#1E1212"
+        android:visibility="visible" />
+
+</RelativeLayout>
